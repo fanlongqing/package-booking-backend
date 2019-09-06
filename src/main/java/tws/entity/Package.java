@@ -5,6 +5,24 @@ public class Package {
     private String  addressee;
     private  String telephone;
     private String weight;
+    private String state;
+    private String dateTime;
+
+    public String getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
 
     public String getTrackingNumber() {
         return trackingNumber;
@@ -30,14 +48,16 @@ public class Package {
         this.telephone = telephone;
     }
 
-    public Package() {
-    }
-
-    public Package(String trackingNumber, String addressee, String telephone, String weight) {
+    public Package(String trackingNumber, String addressee, String telephone, String weight, String state,String dateTime) {
         this.trackingNumber = trackingNumber;
         this.addressee = addressee;
         this.telephone = telephone;
         this.weight = weight;
+        this.state = state;
+        this.dateTime=dateTime;
+    }
+
+    public Package() {
     }
 
     public String getWeight() {
